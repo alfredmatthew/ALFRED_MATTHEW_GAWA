@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
+
+:root {
+	--color-white: #FFFFFF;
+    --color-orange: #ff6600;
+	--primary-font: "Lexend Deca", sans-serif;
+}
+
+body 
+{
+    font-family: var(--primary-font);
+    font-weight: 400;
+    font-size: 14px;
+    background-color: var(--color-white);
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    background-color: var(--color-orange);
+}
+
+.navigation-bar li a {
+    font-weight: 600;
+    color: var(--color-white);
+    text-decoration: none;
+}
+
+.navigation-bar img {
+    width: 100px;
+    cursor: pointer;
+}
+
+.nav-links {
+    list-style: none;
+}
+
+.nav-links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav-links li a:hover {
+    font-weight: 700;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+
+.nav-links .active {
+    font-weight: 700;
+    line-height: 1.5rem;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+
+.header-dengan-image {
+    background: url('../images/idea-img.jpg') no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+    position: relative;
+    transform: skewY(-5deg) translateY(calc(60vh - 120%));
+    z-index: -1;
+    top: 0;
+}
+
+.judul {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 6rem;
+    transform: skewY(5deg);
+}
+
+.judul h1 {
+    font-size: 2.5rem;
+    color: var(--color-white);
+    margin: 5px 0;
+}
+
+.judul p {
+    color: var(--color-white);
+    margin: 0;
+}
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 0;
+    margin: 16px 0;
+    box-shadow: 0px 0px 10px 7px rgba(0,0,0,0.1);
+}
+
+.card-image {
+    width: 100%;
+    height: 200px;
+    background: #ddd;
+    border-radius: 8px 8px 0 0;
+    margin-bottom: 16px;
+    overflow: hidden;
+}
+
+.isi-card {
+    padding: 0 1.5rem 1.5rem 1.5rem; 
+}
+
+.card h2 {
+    margin: 0 0 12px 0;
+    font-size: 1.5em;
+    color: #333;
+}
+.card p {
+    margin: 0 0 8px 0;
+    color: #777;
+}
+.card .date {
+    font-size: 0.9em;
+    color: #999;
+}
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 16px;
+    margin-bottom: 2rem;
+}
+
+
+.card-container .card img {
+    background-size: cover;
+}
+.form-group {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap; } 
+    @media (max-width: 600px) {
+        .form-group {
+            display:flex;
+            align-self: baseline;
+            flex-wrap: wrap;}
+    }
+.form-component {
+    margin-left: auto;
+}
+#size {
+    margin-right: 20px;
+    padding: 4px;
+    min-width: 100px;
+}
+#sort {
+    min-width: 100px;
+    padding: 4px;
+}
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.pagination-link {
+    margin: 0 5px;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.pagination-link:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+.pagination-link.active {
+    background-color: #333;
+    color: #fff;
+    border-color: #333;
+}
+
+.pagination-link.disabled {
+    color: #ccc;
+    border-color: #ccc;
+    pointer-events: none;
+}
